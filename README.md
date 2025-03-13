@@ -7,16 +7,16 @@
 
 
 
-Introduction:
+**Introduction:**
 In the fast-paced software development landscape, organizations are under constant pressure to deliver high-quality products quickly and efficiently. To achieve this, the adoption of DevSecOps practices has become crucial. This project focuses on implementing a secure DevSecOps build pipeline to streamline the software development lifecycle, from code commit to deployment.
 
-Problem Statement:
+**Problem Statement:**
 The traditional software development workflow often faced challenges, such as delayed feedback, lengthy debugging processes, and interrupted continuous testing and deployment. These issues hindered the team's ability to achieve true continuous delivery, leading to slower release cycles and potential quality concerns.
 
-Solution:
+**Solution:**
 To address these challenges, the project aimed to implement a robust Continuous Integration (CI) build pipeline that would automate the build, testing, and security validation processes. Additionally, the team sought to streamline the Continuous Deployment (CD) process by leveraging containerization and a Kubernetes-based deployment strategy.
 
-Implementation:
+**Implementation:**
 1. CI Build Pipeline:
    - Automated the build and unit testing process, triggering builds immediately upon developer code commits.
    - Integrated security checks, including code coverage analysis, static code analysis (SCA), and static application security testing (SAST).
