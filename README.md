@@ -8,12 +8,15 @@
 
 
 **Introduction:**
+
 In the fast-paced software development landscape, organizations are under constant pressure to deliver high-quality products quickly and efficiently. To achieve this, the adoption of DevSecOps practices has become crucial. This project focuses on implementing a secure DevSecOps build pipeline to streamline the software development lifecycle, from code commit to deployment.
 
 **Problem Statement:**
+
 The traditional software development workflow often faced challenges, such as delayed feedback, lengthy debugging processes, and interrupted continuous testing and deployment. These issues hindered the team's ability to achieve true continuous delivery, leading to slower release cycles and potential quality concerns.
 
 **Solution:**
+
 To address these challenges, the project aimed to implement a robust Continuous Integration (CI) build pipeline that would automate the build, testing, and security validation processes. Additionally, the team sought to streamline the Continuous Deployment (CD) process by leveraging containerization and a Kubernetes-based deployment strategy.
 
 **Implementation:**
@@ -47,35 +50,3 @@ This project demonstrates the successful implementation of a secure DevSecOps bu
 
 
 
-
-
-
-
-## Create 1 EC2 server
-- [ ] Minikube server with 4 GB storage - t2.medium
-
-## Setup Minikube
-```
-$ Install Docker
-$ sudo apt update && sudo apt -y install docker.io
-
- Install kubectl
-$ curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.7/bin/linux/amd64/kubectl && chmod +x ./kubectl && sudo mv ./kubectl /usr/local/bin/kubectl
-
- Install Minikube
-$ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v1.23.2/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
-
- Start Minikube
-$  sudo apt install conntrack
-$  minikube start --vm-driver=none
-```
-
-## Setup ArgoCD
-```
-$ kubectl create namespace argocd
-$ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-$ kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "NodePort"}}' 
-
-For version 1.9 or later:
-$ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d && echo
-```
