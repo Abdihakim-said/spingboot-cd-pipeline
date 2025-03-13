@@ -5,7 +5,8 @@
 
 # PRODUCTION GRADE DEVSECOPS CICD Pipeline
 
-![Uploading Screenshot 2025-03-13 at 01.23.04.png…]()
+<img width="850" alt="Screenshot 2025-03-13 at 01 23 04" src="https://github.com/user-attachments/assets/354bdcf0-8d58-4d97-83aa-7de12e6696f8" />
+
 
 
 **Introduction:**
